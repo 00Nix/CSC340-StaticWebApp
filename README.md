@@ -1,2 +1,2 @@
 # StaticWebApp
-A static website centered around the DC hero Batman
+A static website centered around different superheros
