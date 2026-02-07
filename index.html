@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Character Gallery</title>
+    <title>The Justice League | Character Gallery</title>
 </head>
 <body>
+    <h1>Justice League | Character Gallery</h1>
+    <div id="gallery">
+        <!-- Character images will be displayed here -->
+    </div>
+
+    <script>
+        // Sample character data
+        const characters = [
+            { name: 'Batman', image: 'batman.jpg' },
+            { name: 'Superman', image: 'superman.jpg' },
+            { name: 'Wonder Woman', image: 'wonderwoman.jpg' },
+            { name: 'Green Latern', image: 'greenlatern.jpg' },
+            { name: 'The Flash', image: 'theflash.jpg' },
+        ];
+
+        const gallery = document.getElementById('gallery');
+
+        // Function to display characters in the gallery
+        function displayCharacters() {
+            characters.forEach(character => {
+                const img = document.createElement('img');
+                img.src = character.image;
+                img.alt = character.name;
+                img.style.width = '200px';
+                img.style.margin = '10px';
+                gallery.appendChild(img);
+            });
+        }
+
+        // Call the function to display characters
+        displayCharacters();
+    </script>
 </body>
 </html>
  
