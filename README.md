@@ -1,2 +1,2 @@
 # StaticWebApp
-A static website centered around different superheros
+A static website centered around the justice league
